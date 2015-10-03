@@ -1,0 +1,36 @@
+{
+  "name": "alt-jspm-example-tests",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma": "^0.13.10",
+    "karma-jasmine": "^0.3.6",
+    "karma-jspm": "^2.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "jspm": "^0.15.7",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-jspm": "^2.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "alt": "npm:alt@0.17.3",
+      "react": "npm:react@0.13.3"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  }
+}
