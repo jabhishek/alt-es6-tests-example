@@ -1,7 +1,7 @@
-import alt from 'src/MyAlt';
+import alt from 'MyAlt';
 // wrappedPetStore is alt store, UnwrappedPetStore is UnwrappedPetStore class
-import wrappedPetStore, {UnwrappedPetStore} from 'src/stores/PetStore';
-import petActions from 'src/actions/PetActions';
+import wrappedPetStore, {UnwrappedPetStore} from 'stores/PetStore';
+import petActions from 'actions/PetActions';
  // you can use any assertion library you want
 
 describe('PetStore', () => {

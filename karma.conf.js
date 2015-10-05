@@ -32,7 +32,7 @@ module.exports = function (config) {
 
         // level of logging
         // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-        logLevel: config.LOG_INFO,
+        logLevel: config.LOG_DEBUG,
 
         // enable / disable watching file and executing tests whenever any file changes
         autoWatch: true,
@@ -46,14 +46,12 @@ module.exports = function (config) {
         singleRun: false,
 
         jspm: {
-            loadFiles: ['tests/**/*spec.js'],
-            serveFiles: ['src/**/*.*', 'tests/**/*.js'],
+            loadFiles: ['src/**/*.js'],
             config: "config.js",
             packages: "jspm_packages"
         },
         proxies: {
-            '/base/': '/base/src/',
-            '/base/jspm_packages/': '/base/jspm_packages/'
+            '/base/': '/base/src/'
         }
     });
 };
